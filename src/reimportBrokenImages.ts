@@ -1,7 +1,17 @@
-import {FSIServerClient, IListData, IListEntry, LogLevel, APITemplateSupplier} from "@neptunelabs/fsi-server-api-client";
+/*
+    SAMPLE
+    -----------------------------------------------------
+    make FSI -Server re-import all broken images
+
+    Usage:
+    ts-node src/reimportBrokenImages.ts
+
+ */
+
 // PLEASE NOTE: you need to enter the FSI Server credentials in this file
-import {ServerVars} from "./ServerVars";
-const serverVars = new ServerVars();
+import {FSIServerClient, IListData, IListEntry, LogLevel, APITemplateSupplier} from "@neptunelabs/fsi-server-api-client";
+import {_FSIServerVars} from "./_FSIServerVars";
+const serverVars = new _FSIServerVars();
 
 const client = new FSIServerClient(serverVars.host);
 client.setLogLevel(LogLevel.trace);

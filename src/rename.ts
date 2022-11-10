@@ -2,12 +2,16 @@
     SAMPLE
     -----------------------------------------------------
     renaming multiple files
+
+    Usage:
+    ts-node src/rename.ts
+
  */
 
 
 // PLEASE NOTE: you need to enter the FSI Server credentials in this file
-import {ServerVars} from "./ServerVars";
-const serverVars = new ServerVars();
+import {_FSIServerVars} from "./_FSIServerVars";
+const serverVars = new _FSIServerVars();
 
 import {FSIServerClient, IListEntry, LogLevel} from "@neptunelabs/fsi-server-api-client";
 

@@ -2,11 +2,15 @@
     SAMPLE
     -----------------------------------------------------
     delete all files inside a folder that have a file name containing the character "b"
+
+    Usage:
+    ts-node src/delete.ts
+
  */
 
 // PLEASE NOTE: you need to enter the FSI Server credentials in this file
-import {ServerVars} from "./ServerVars";
-const serverVars = new ServerVars();
+import {_FSIServerVars} from "./_FSIServerVars";
+const serverVars = new _FSIServerVars();
 
 import {FSIServerClient, LogLevel} from "@neptunelabs/fsi-server-api-client";
 import {IListData, IListEntry} from "@neptunelabs/fsi-server-api-client";

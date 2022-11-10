@@ -2,20 +2,24 @@
     SAMPLE
     -----------------------------------------------------
     downloading ICC profiles
+
+    Usage:
+    ts-node downloadICC.ts C:\temp\myICCDownloads
+
  */
 
 // PLEASE NOTE: you need to enter the FSI Server credentials in this file
-import {ServerVars} from "./ServerVars";
+import {_FSIServerVars} from "./_FSIServerVars";
 import {FSIServerClient, LogLevel} from "@neptunelabs/fsi-server-api-client";
 
-const serverVars = new ServerVars();
+const serverVars = new _FSIServerVars();
 
 const myArgs = process.argv.slice(2);
 const targetPath = (myArgs && myArgs[0]);
 
 if (!targetPath) {
     console.error("Please pass the directory to download the files to as the first argument.");
-    console.error("EXAMPLE: node downloadICC myDownloads");
+    console.error("EXAMPLE: node downloadICC C:\myDownloads");
 }
 else {
 

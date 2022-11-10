@@ -2,12 +2,16 @@
     SAMPLE
     -----------------------------------------------------
     uploading files
+
+    Usage:
+    ts-node src/upload.ts C:\myImagesToUpload
+
  */
 
 // PLEASE NOTE: you need to enter the FSI Server credentials in this file
-import {ServerVars} from "./ServerVars";
+import {_FSIServerVars} from "./_FSIServerVars";
 import {FSIServerClient, IListData, IListEntry, LogLevel} from "@neptunelabs/fsi-server-api-client";
-const serverVars = new ServerVars();
+const serverVars = new _FSIServerVars();
 
 const myArgs = process.argv.slice(2);
 const sourcePath = (myArgs && myArgs[0]);

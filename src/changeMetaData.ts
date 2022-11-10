@@ -2,11 +2,15 @@
     SAMPLE
     -----------------------------------------------------
     changing meta data of multiple files
+
+    Usage:
+    ts-node src/changeMetaData.ts
+
  */
 
 // PLEASE NOTE: you need to enter the FSI Server credentials in this file
-import {ServerVars} from "./ServerVars";
-const serverVars = new ServerVars();
+import {_FSIServerVars} from "./_FSIServerVars";
+const serverVars = new _FSIServerVars();
 
 import {FSIServerClient, IListEntry, IMetaData, LogLevel} from "@neptunelabs/fsi-server-api-client";
 

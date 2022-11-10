@@ -2,12 +2,16 @@
     SAMPLE
     -----------------------------------------------------
     read local file list
+
+    Usage:
+    ts-node src/listLocal.ts C:\myImages
+
  */
 
 // PLEASE NOTE: you need to enter the FSI Server credentials in this file
-import {ServerVars} from "./ServerVars";
+import {_FSIServerVars} from "./_FSIServerVars";
 import {FSIServerClient, LogLevel} from "@neptunelabs/fsi-server-api-client";
-const serverVars = new ServerVars();
+const serverVars = new _FSIServerVars();
 
 
 const myArgs = process.argv.slice(2);

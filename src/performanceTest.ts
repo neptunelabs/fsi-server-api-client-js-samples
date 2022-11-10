@@ -1,6 +1,9 @@
 /*
     This sample runs a huge number of requests
     and is intended for performance testing only
+
+    Usage:
+    ts-node src/performanceTest.ts
  */
 
 

@@ -2,14 +2,18 @@
         SAMPLE
     -----------------------------------------------------
     downloading files
+
+    Usage:
+    ts-node downloadOriginals.ts C:\temp\myOriginalDownloads
+
  */
 
 
 // PLEASE NOTE: you need to enter the FSI Server credentials in this file
-import {ServerVars} from "./ServerVars";
+import {_FSIServerVars} from "./_FSIServerVars";
 import {FSIServerClient, IListEntry, LogLevel} from "@neptunelabs/fsi-server-api-client";
 
-const serverVars = new ServerVars();
+const serverVars = new _FSIServerVars();
 
 
 
@@ -18,7 +22,7 @@ const targetPath = (myArgs && myArgs[0]);
 
 if (!targetPath) {
     console.error("Please pass the directory to download the files to as the first argument.");
-    console.error("EXAMPLE: node downloadOriginals myDownloads");
+    console.error("EXAMPLE: node downloadOriginals C:\myDownloads");
 }
 else {
 
