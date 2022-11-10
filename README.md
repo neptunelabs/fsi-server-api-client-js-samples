@@ -13,7 +13,7 @@
 -   [About](#about)
 -   [How to install](#how-to-install)
 -   [Preperation](#Preperation)
--   [Running a sample file](#Running-a-sample-file)
+-   [Excecuting a sample file](#Excecuting-a-sample-file)
 - [API Documentation](https://github.com/neptunelabs/fsi-server-api-client-js/wiki)
 
 ## About
@@ -44,7 +44,7 @@ npm install
 ```
 - edit the file <b>/src/_FSIServerVars.ts</b> and enter the host and credentials of the FSI Server instance you want to use.
 
-## Running a sample file
+## Excecuting a sample file
 
 
 To run a samples type e.g.:
