@@ -14,6 +14,7 @@
 -   [How to install](#how-to-install)
 -   [Preperation](#Preperation)
 -   [Running a sample file](#Running-a-sample-file)
+- [API Documentation](https://github.com/neptunelabs/fsi-server-api-client-js/wiki)
 
 ## About
 FSI Server API Client JS offers developers a flexible interface to control the REST OpenAPI of FSI Server.
@@ -53,12 +54,14 @@ ts-node src/readMetaData.ts
 
 
 ### All Samples files are non-destructive
-<b>No files on FSI Server will be modified or deleted</b> upon executing a sample.<br/>
-E.g. the delete.ts sample copies files to a temporary directory and deletes those files afterwards.
+<b>No files on the configured FSI Server will be modified or deleted</b> upon executing a sample.<br/>
+E.g. the delete.ts sample copies files to a temporary directory on FSI Server and deletes those files afterwards.<br/><br/>
+The intention of the samples is just to provide you with a reference how to use the API in your own project. 
 
 ### Default directories
 The file <b>/src/_FSIServerVars.ts</b> contains connectors and directories that are present on a stock FSI Server installation to make the samples run out of the box.<br/> 
 You might want to change these directories or alternatively edit the paths in the sample file(s).
 
+## API Documentation
 Please refer to the API wiki for a [complete documentation](https://github.com/neptunelabs/fsi-server-api-client-js/wiki) of the API.
  
