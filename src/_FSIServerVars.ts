@@ -3,9 +3,9 @@ export class _FSIServerVars {
     // PLEASE ENTER THE HOST AND CREDENTIALS TO BE USED BY THE API SAMPLES HERE
 
     // FSI Server host and credentials
-    public readonly host: string = "";        // example: https://fsi.example.tld
-    public readonly userName: string = "";
-    public readonly passWord: string = "";
+    public readonly host: string = "http://fsi.base.lan";        // example: https://fsi.example.tld
+    public readonly userName: string = "admin";
+    public readonly passWord: string = "admin";
 
     // the values below do not need to be modified for
     // FSI Servers containing the default connector "sample-images"

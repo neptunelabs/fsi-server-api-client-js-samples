@@ -12,7 +12,7 @@
     "url": "git+https://github.com/neptunelabs/fsi-server-api-client-js-samples.git"
   },
   "dependencies": {
-    "@neptunelabs/fsi-server-api-client": "^1.0.67"
+    "@neptunelabs/fsi-server-api-client": "^1.0.69"
   },
   "devDependencies": {
     "@types/node": "^18.11.9",
